@@ -18,7 +18,8 @@ function degree(mtrx,v){
 }
 
 function degreecentrality(mtrx,v){
-let neighbors
+let neighbors= mtrx(v).length;
+return degree(mtrx,v)/(neighbors-1);
 }
 
 //Challenge
